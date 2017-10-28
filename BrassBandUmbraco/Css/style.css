@@ -1,0 +1,378 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  color: #2b2b2b;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#logo-container {
+  position: relative;
+  text-align: center;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px 25px;
+}
+nav .my-brand-logo {
+  width: 0;
+  height: 0;
+  float: left;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 2.1rem;
+  padding: 0;
+}
+
+#title {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  margin: auto;
+  bottom: 0;
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: 1px;
+}
+#title > h3 {
+  margin: 10px;
+}
+.nav-items {
+  padding-top: 24px;
+  position: absolute;
+  z-index: 2;
+}
+.nav-items-fixed {
+  right: 0;
+  top: 0;
+  padding-right: 25px;
+}
+.nav-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 64px;
+  width: 100%;
+  z-index: 2;
+  background-color: #1976d2;
+}
+.nav-background-height {
+  margin-top: 24px;
+}
+.clock-icon {
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+  background-color: #2b2b2b;
+}
+.hidden {
+  display: none;
+}
+.nav-item {
+  text-transform: capitalize;
+}
+nav ul li {
+  display: inline;
+  float: none;
+}
+nav ul li a {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+#bands-div, #bands-div i {
+  line-height: 50px;
+  height: 50px;
+}
+
+nav ul li ul li {
+  display: block;
+}
+nav ul li ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+nav ul a:hover {
+  background-color: transparent;
+}
+
+.nav-line {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.dropdown-content li > a {
+  color: #2b2b2b;
+}
+
+#bands-dropdown {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+#hamburger {
+  height: 100%;
+  float: right;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.hamburger-icon {
+  margin-top: 24px;
+}
+
+.my-parallax {
+  /* The image used */
+  background-image: url("../img/cover.jpg");
+
+  /* Full height */
+  height: 300px;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+}
+
+#contents {
+  border-top: solid 5px #ffca28;
+}
+
+#contents {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.heading {
+  font-family: 'Cabin', sans-serif;
+}
+
+.article {
+  margin: 20px 5px;
+}
+
+.article-header {
+  display: inline-block;
+  width: 100%;
+}
+
+.article-header, .article-header-meta {
+}
+
+.article-header > * {
+  display: inline-block;
+}
+
+.article-header > *, .article-header-meta > * {
+  margin: 5px;
+}
+
+.article-header-meta {
+  float: right;
+}
+
+.article-header-meta > * {
+  display: inline-block;
+}
+
+.article-body {
+  padding: 8px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+.most-recent-articles {
+  display: block;
+  color: #737373;
+}
+
+.most-recent-articles > div {
+  display: inline-grid;
+  /*float: right;*/
+}
+
+.most-recent-articles > div > h5 {
+  width: 100%;
+  display: inline-block;
+  color: #494949;
+}
+
+.most-recent-list {
+  display: inline-block;
+  margin-top: 0;
+  text-align: start;
+}
+
+.most-recent-list > li > a {
+  display: inline-block;
+  color: #737373;
+  margin: 5px 0;
+  padding: 0 10px;
+}
+
+.most-recent-list > li > a:hover {
+  color: #c7c7c7;
+  border-left: 1px solid #ffca28;
+  padding-left: 9px;
+}
+
+.most-recent-container-reset {
+  top: 0 !important;
+  position: relative !important;
+}
+
+.most-recent-list .active, #bands-dropdown-small.active {
+  border-left: 2px solid #ffca28 !important;
+  padding-left: 8px !important;
+  font-weight: bold !important;
+  color: inherit !important;
+}
+
+.page-footer {
+  padding-bottom: 20px;
+}
+
+.page-footer p {
+  font-size: 14px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.social-container {
+  text-align: center;
+}
+
+.text-button {
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+@media only screen and (min-width: 1001px) {
+  .my-parallax {
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-size: contain;
+  }
+  .nav-remove-padding {
+    padding-top: 0;
+    position: fixed;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .my-hide-on-med-and-down {
+    display: none !important;
+  }
+  .nav-items-fixed {
+    position: inherit;
+  }
+  nav ul a {
+    padding: 0 9px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  nav ul li a {
+    font-size: 14px;
+  }
+  .nav-items-fixed {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .my-hide-on-small-only {
+    display: none !important;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  #title {
+    justify-content: center;
+    align-items: center;
+  }
+  #hamburger {
+    align-items: center;
+  }
+  .hamburger-icon {
+    margin-top: 0;
+  }
+  .social-icon {
+    margin: 0 10px;
+  }
+  footer .row > div {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .my-hide-on-med-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  h3 {
+    font-size: 2.0rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  nav {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 322px) {
+  #title > h3 {
+    margin: 0;
+  }
+}

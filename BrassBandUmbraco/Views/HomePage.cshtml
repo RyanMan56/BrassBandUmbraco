@@ -1,0 +1,165 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div id="contents">
+  <div class="container">
+    <div class="section">
+      <h4 class="heading">@Umbraco.Field("pageTitle", altText:"Welcome")</h4>
+      <div>@Umbraco.Field("bodyText", altText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.")</div>
+    </div>
+    <div class="section">
+      <h4 class="heading">@Umbraco.Field("articlesTitle", altText:"What's new")</h4>
+      <div class="articles-section row">
+        <div class="articles col m8 s12">
+          <div id="article-1" class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div id="article-2" class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div id="article-3" class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div id="article-4" class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div id="article-5" class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+          <div class="article scrollspy">
+            <div class="article-header">
+              <h5>Title</h5>
+              <div class="article-header-meta">
+                <p>Byline<p>
+                <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</p>
+              </div>
+            </div>
+            <div class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo sapien, facilisis aliquam finibus eget, viverra sed metus. Aenean placerat ut metus eu euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus viverra ipsum, a luctus nunc semper vitae. Nam posuere ac erat eget rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam pharetra pellentesque vestibulum. Integer sit amet justo eleifend, posuere nisl in, hendrerit risus. Aenean gravida, purus ac finibus accumsan, ante velit porttitor massa, eu tincidunt risus nibh sit amet felis. Donec libero lectus, venenatis sed semper nec, aliquet eu diam. Nunc scelerisque convallis odio, quis pharetra odio semper quis. Vivamus in finibus eros, non cursus risus. Nam sit amet malesuada eros, nec mollis libero.
+            </div>
+          </div>
+        </div>
+        <div class="most-recent-articles col m4 s0 hide-on-small-only">
+          <div id="most-recent-container">
+            <h5>Most recent</h5>
+            <ul class="most-recent-list">
+              <li><a href="#article-1">Training Band Conductor required</a></li>
+              <li><a href="#article-2">Player vacancies</a></li>
+              <li><a href="#article-3">City of Chester Training Band - Press release</a></li>
+              <li><a href="#article-4">Player vacancies</a></li>
+              <li><a href="#article-5">City of Chester Training Band - Press release</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
