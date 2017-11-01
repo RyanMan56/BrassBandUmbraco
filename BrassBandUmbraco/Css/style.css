@@ -30,6 +30,10 @@ body {
 #logo-container {
   position: relative;
   text-align: center;
+  height: 100%;
+}
+#nav-container {
+  height: 100px;
 }
 nav {
   position: absolute;
@@ -58,7 +62,7 @@ nav .my-brand-logo {
   font-family: 'Cabin', sans-serif;
   letter-spacing: 1px;
 }
-#title > h3 {
+#title h3 {
   margin: 10px;
 }
 .nav-items {
@@ -159,12 +163,12 @@ nav ul a:hover {
   background-image: url("../img/cover.jpg");
 
   /* Full height */
-  height: 300px;
+  height: 100px;
 
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: inherit;
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 #contents {
@@ -287,11 +291,6 @@ nav ul a:hover {
 }
 
 @media only screen and (min-width: 1001px) {
-  .my-parallax {
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-size: contain;
-  }
   .nav-remove-padding {
     padding-top: 0;
     position: fixed;
@@ -299,6 +298,10 @@ nav ul a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+  .my-parallax {
+      /* Create the parallax scrolling effect */
+      background-size: auto;
+  }
   .my-hide-on-med-and-down {
     display: none !important;
   }
@@ -371,8 +374,26 @@ nav ul a:hover {
   }
 }
 
-@media only screen and (max-width: 322px) {
-  #title > h3 {
+@media only screen and (max-width: 376px) {
+  h3 {
+    font-size: 1.40rem;
+  }
+}
+
+@media only screen and (max-width: 357px) {
+  h3 {
+    font-size: 1.35rem;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 331px) {
+  #title h3 {
     margin: 0;
   }
 }

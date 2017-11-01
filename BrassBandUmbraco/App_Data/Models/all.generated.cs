@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ea7c91c28dc13568")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f4cb4eda486e53a6")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 
 // FILE: models.generated.cs
@@ -90,6 +90,165 @@ namespace Umbraco.Web.PublishedContentModels
 		public string PageTitle
 		{
 			get { return this.GetPropertyValue<string>("pageTitle"); }
+		}
+	}
+
+	/// <summary>BandPage</summary>
+	[PublishedContentModel("bandPage")]
+	public partial class BandPage : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "bandPage";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public BandPage(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BandPage, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// BandMembers: The content of the Meet The Band section
+		///</summary>
+		[ImplementPropertyType("bandMembers")]
+		public IHtmlString BandMembers
+		{
+			get { return this.GetPropertyValue<IHtmlString>("bandMembers"); }
+		}
+
+		///<summary>
+		/// BandMembersTitle: Title of the Meet The Band section, e.g. "Meet the band"
+		///</summary>
+		[ImplementPropertyType("bandMembersTitle")]
+		public string BandMembersTitle
+		{
+			get { return this.GetPropertyValue<string>("bandMembersTitle"); }
+		}
+
+		///<summary>
+		/// BodyText: First chunk of text on the page
+		///</summary>
+		[ImplementPropertyType("bodyText")]
+		public IHtmlString BodyText
+		{
+			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
+		}
+
+		///<summary>
+		/// Page Title: Title of the page, e.g. "Main band"
+		///</summary>
+		[ImplementPropertyType("pageTitle")]
+		public string PageTitle
+		{
+			get { return this.GetPropertyValue<string>("pageTitle"); }
+		}
+	}
+
+	/// <summary>Article Item</summary>
+	[PublishedContentModel("articleItem")]
+	public partial class ArticleItem : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "articleItem";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public ArticleItem(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ArticleItem, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Article Author: Who wrote this article
+		///</summary>
+		[ImplementPropertyType("articleAuthor")]
+		public string ArticleAuthor
+		{
+			get { return this.GetPropertyValue<string>("articleAuthor"); }
+		}
+
+		///<summary>
+		/// Article Content: The article itself
+		///</summary>
+		[ImplementPropertyType("articleContent")]
+		public IHtmlString ArticleContent
+		{
+			get { return this.GetPropertyValue<IHtmlString>("articleContent"); }
+		}
+
+		///<summary>
+		/// Article Date: The date this article was written
+		///</summary>
+		[ImplementPropertyType("articleDate")]
+		public DateTime ArticleDate
+		{
+			get { return this.GetPropertyValue<DateTime>("articleDate"); }
+		}
+
+		///<summary>
+		/// Article Title: Title of the article
+		///</summary>
+		[ImplementPropertyType("articleTitle")]
+		public string ArticleTitle
+		{
+			get { return this.GetPropertyValue<string>("articleTitle"); }
+		}
+	}
+
+	/// <summary>Articles Main</summary>
+	[PublishedContentModel("articlesMain")]
+	public partial class ArticlesMain : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "articlesMain";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public ArticlesMain(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ArticlesMain, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Articles Title: Title of the articles section, e.g. "What's new"
+		///</summary>
+		[ImplementPropertyType("articlesTitle")]
+		public string ArticlesTitle
+		{
+			get { return this.GetPropertyValue<string>("articlesTitle"); }
 		}
 	}
 

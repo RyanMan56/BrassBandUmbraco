@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ArticleItem>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+
+@{ var index = (Int32)ViewData["index"]; }
+
+<div id="article-@index" class="article scrollspy">
+  <div class="article-header">
+    <h5>@Umbraco.Field("articleTitle", altText:"Title")</h5>
+    <div class="article-header-meta">
+      <p>@Umbraco.Field("articleAuthor", altText:"Author")<p>
+      <p><i class="fa fa-calendar-o" aria-hidden="true"></i> @umbraco.library.FormatDateTime(Model.Content.GetPropertyValue("articleDate").ToString(), "dd/MM/yyyy")</p>
+    </div>
+  </div>
+  <div class="article-body">
+    @Umbraco.Field("articleContent")
+  </div>
+</div>

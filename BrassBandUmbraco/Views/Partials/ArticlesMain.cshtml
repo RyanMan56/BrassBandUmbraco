@@ -1,0 +1,39 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ArticlesMain>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+
+<div class="section">
+  <h4 class="heading">@Umbraco.Field("articlesTitle", altText: "What's new")</h4>
+  <div class="articles-section row">
+    <div class="articles col m8 s12">
+      
+    @{ var articles = new List<string>(); }
+      
+    @foreach (var page in Model.Content.Children.Where(x => x.IsVisible()).OrderByDescending(x => x.GetPropertyValue<DateTime>("articleDate"))) {
+        System.Diagnostics.Debug.WriteLine(@page.GetPropertyValue<string>("articleDate"));
+        @Html.Partial("ArticleItem", page, new ViewDataDictionary(this.ViewData) {
+          { "index", articles.Count }
+        });
+        articles.Add(@page.GetPropertyValue<string>("articleTitle"));
+    }
+
+    </div>
+    <div class="most-recent-articles col m4 s0 hide-on-small-only">
+      <div id="most-recent-container">
+        <h5>Most recent</h5>
+        <ul class="most-recent-list">
+          @{
+              var count = 5;
+              if (articles.Count < 5)
+              {
+                  count = articles.Count;
+              }
+          }
+          @for (var i = 0; i < count; i++)
+          {                      
+            <li><a href="#article-@i">@articles[i]</a></li>
+          }                 
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

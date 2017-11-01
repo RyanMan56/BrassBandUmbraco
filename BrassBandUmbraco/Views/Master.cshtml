@@ -15,31 +15,31 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin:700|Montserrat|Open+Sans" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <div class="my-parallax" id="banner"></div>
   <ul id="bands-dropdown" class="dropdown-content light-blue-text text-darken-2">
-    <li><a href="#">MAIN BAND</a></li>
+    <li><a href="/main-band">MAIN BAND</a></li>
     <li class="divider"></li>
-    <li><a href="#">TRAINING BAND</a></li>
+    <li><a href="/training-band">TRAINING BAND</a></li>
     <li class="divider"></li>
-    <li><a href="#">JUNIOR BAND</a></li>
+    <li><a href="/junior-band">JUNIOR BAND</a></li>
   </ul>
   <ul id="bands-dropdown-small" class="dropdown-content">
-    <li><a href="#">MAIN BAND</a></li>
-    <li><a href="#">TRAINING BAND</a></li>
-    <li><a href="#">JUNIOR BAND</a></li>
+    <li><a href="/main-band">MAIN BAND</a></li>
+    <li><a href="/training-band">TRAINING BAND</a></li>
+    <li><a href="/junior-band">JUNIOR BAND</a></li>
   </ul>
   <nav id="nav-container" class="transparent z-depth-0" role="navigation">
     <div id="logo-container">
       <a href="#" data-activates="nav-mobile" id="hamburger" class="button-collapse my-hide-on-med-and-up valign-wrapper"><i class="material-icons hamburger-icon">menu</i></a>
-      <a class="my-brand-logo" href="#"><img id="logo" src="img/clock_web.png" width=100% height=100%></a>
-      <div id="title" class="valign-wrapper"><h3>Chester Brass Band</h3></div>
+      <a class="my-brand-logo" href="/"><img id="logo" src="/img/clock_web.png" width=100% height=100%></a>
+      <div id="title" class="valign-wrapper"><a href="/"><h3>CHESTER BRASS BAND</h3></a></div>
     </div>
     <div id="nav-background" class="nav-background z-depth-1 my-hide-on-med-and-down scale-transition scale-out">
-      <div class="clock-icon z-depth-1"><a href="#"><img id="logo" src="img/clock_face.png" width=100% height=100%></a></div>
+      <div class="clock-icon z-depth-1"><a href="/"><img id="logo" src="/img/clock_face.png" width=100% height=100%></a></div>
     </div>
     <ul class="right my-hide-on-small-only nav-items nav-items-fixed">
       <li><a class="dropdown-button nav-item" data-activates="bands-dropdown" href="#"><div id="bands-div">BANDS<i class="material-icons right">arrow_drop_down</i></div></a></li>
@@ -58,7 +58,9 @@
     </ul>
   </nav>
   
-  @RenderBody();
+  <div id="contents">
+    @RenderBody()
+  </div>
 
   <footer class="page-footer blue darken-3">
     <div class="container">
@@ -86,8 +88,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="Scripts/materialize.js"></script>
-  <script src="Scripts/init.js"></script>
+  <script src="/Scripts/materialize.js"></script>
+  <script src="/Scripts/init.js"></script>
   <script src="https://use.fontawesome.com/5658300424.js"></script>
 
   </body>
